@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CONSULTA API R&M</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id= "body">
+
+<div class="wrap">
+	<nav class="navbar">
+		<div class="container-fluid">
+			
+			<div class="opciones-menu">
+
+				<a href="locacion.html"><p>Locaciones</p></a>
+				<a href="episodios.html"><p>Episodios</p></a>
+				<a href="index.html"><p>Personaje</p></a>
+			</div>
+
+			<div class="opciones-derecha">
+				<div class="opciones-pagina">
+					<p onclick="location.reload()">Pagina </p>
+						<select  name=pagina id="pagina" onchange="apiRick3(this.value)">
+							<option value="0" selected>-</option>	
+							<script>	
+								for(let i = 1; i<=3; i++){
+									document.write(`<option value="${i}">${i}</option>`);
+								}
+							</script>
+						<select>
+				</div>	
+				
+				
+				<div class="opciones-busqueda">
+					<form  role="search">
+						<input  type="search" placeholder="Buscar" aria-label="Buscar">
+					</form>
+				</div>
+			</div>
+
+		</div>
+	  </nav>
+
+
+
+	<div id="resultado" class="grid">
+		
+	</div>
+		
+
+</div>
+
+<script src="script2.js"></script>
+
+</body>
+
+</html>

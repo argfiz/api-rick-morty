@@ -1,0 +1,167 @@
+#body {
+    background-color: #071115; 
+    
+      margin: 0; /* Elimina el margen predeterminado del body */
+      display: flex; /* Establece el contenedor principal como flexbox */
+      justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+      align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+     
+}
+
+.wrap{
+     width: 85%; /* Establece el ancho del div contenedor */
+      background-color: #071115; /* Color de fondo opcional */
+      
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr); 
+    column-gap: 1em; 
+    row-gap: 3.5em;   
+}
+
+.grid  div{   
+      background: #282a29;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;         
+}
+
+.card {    /*****************************************CARTA*****************************************************/                                                
+   
+   width: auto;
+   border-bottom: 2px solid #ffffff;
+   height: 100%;  
+}
+
+.nested-grid {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr) ;  
+}   
+
+
+.nested-grid2 {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr) ;  
+}  
+
+#img-av {
+    display:flex;
+    align-items: flex-start;   
+}
+    
+#img-av img{
+    max-width: 100%;
+    height: auto;
+}
+
+.info-font{
+    width: auto;
+    text-align: center;
+    padding-right: 10px; 
+    padding-left: 10px;
+}
+
+.info-font b{    /*************************************************************************************/
+    color: red;
+    font-family: verdana;
+    font-size: 1rem;
+}
+
+.opciones-menu{      /************************************MENU************************************************/   
+    display:flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+.opciones-derecha{
+    display: flex;
+    align-items: center ;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+/*#busqueda.large {
+    width: 400px;
+}*/
+
+
+
+.opciones-pagina{
+    
+    display: flex;
+    align-items: center;
+}
+.opciones-busqueda{
+    display: flex; 
+    align-items: center; 
+     
+}
+
+.container-fluid {  
+
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.resaltado{
+    font-size: 1.50rem;
+   color: red 
+}
+
+
+.container-fluid a :hover { /***************************************************************************************/
+   font-size: 1.50rem;
+   color: red   
+} 
+
+p {
+    font-size: 1.10rem;
+    font-family:courier;
+    color: #ffffff; 
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nombre-pj h2{
+    text-align: center;
+    font-style: verdana;
+    font-size: 26px;
+    color: #ffffff; 
+}
+
+
+input {
+    
+    width: 200px;
+    height: 40px;
+}
+
+/************************************************/
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar img {
+    width: 50px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Esto mantendrá la proporción de aspecto */
+}
+
+.avatar p {
+    margin-top: 5px;
+    font-size: 14px; /* Tamaño de fuente para el nombre del personaje */
+    color: #ffffff;
+}
+
+
