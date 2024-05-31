@@ -160,18 +160,6 @@ const apiRick3 = async (pagina) => {
 };
 
 
-////////RESALTAR TODOS LOS ELEMENTOS EN EL MENU 	
-  
-var menu = document.querySelectorAll("a")
-
-	for(var i = 0; i < menu.length; i++){
-	
-		menu[i].addEventListener("click", function(){
-			this.classList.add("resaltado")
-			this.style.color="red"
-			//alert("tocaron un link ")
-	})
-}
 
 
 
